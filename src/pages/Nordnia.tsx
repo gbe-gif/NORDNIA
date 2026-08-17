@@ -57,6 +57,8 @@ export default function Nordnia() {
             title="황태자"
             keyword="다정함, 만성 피로"
             ability="최상급 정령사 (빛의 정령왕과 계약중)"
+            imageUrl="https://gbe88.uk/2/EB/R.webp"
+            imageCaption="* RP중 라우리츠의 이미지는 미출력됨"
             details={
               <ul className="list-disc list-inside space-y-1.5">
                 <li>황금빛 머리카락과 은빛 눈동자를 지닌 눈에 띄는 외모.</li>

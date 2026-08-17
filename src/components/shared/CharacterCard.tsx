@@ -16,6 +16,7 @@ interface CharacterProps {
   mbti?: string;
   birthday?: string;
   imageUrl?: string;
+  imageCaption?: string;
 }
 
 export default function CharacterCard({
@@ -31,7 +32,8 @@ export default function CharacterCard({
   height,
   mbti,
   birthday,
-  imageUrl
+  imageUrl,
+  imageCaption
 }: CharacterProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -82,6 +84,11 @@ export default function CharacterCard({
                     className="w-full h-auto max-h-[600px] object-contain rounded-sm"
                     referrerPolicy="no-referrer"
                   />
+                  {imageCaption && (
+                    <p className="text-[10px] text-ink-light/60 mt-1.5 text-center">
+                      {imageCaption}
+                    </p>
+                  )}
                 </div>
               )}
               
