@@ -179,6 +179,8 @@ export default function Vaneris() {
                 <li>달리기 시작하자마자 중심을 잃고 넘어져 구르는 귀여운 습성 보유.</li>
               </ul>
             }
+            imageUrl="https://gbe88.uk/2/EB/m2.webp"
+            imageAspectRatio="1:1"
             themeColor="text-vaneris-main"
           />
         </div>

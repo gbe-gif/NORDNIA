@@ -171,6 +171,8 @@ export default function Esvard() {
                 <li>섭취 시 마력 회복과 집중력 향상에 탁월한 효과.</li>
               </ul>
             }
+            imageUrl="https://gbe88.uk/2/EB/m1.webp"
+            imageAspectRatio="1:1"
             themeColor="text-esvard-main"
           />
         </div>

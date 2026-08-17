@@ -9,6 +9,7 @@ interface ExpandableInfoProps {
   details: ReactNode;
   themeColor: string;
   imageUrl?: string;
+  imageAspectRatio?: '21:9' | '1:1' | 'auto';
 }
 
 export default function ExpandableInfo({
@@ -17,7 +18,8 @@ export default function ExpandableInfo({
   summary,
   details,
   themeColor,
-  imageUrl
+  imageUrl,
+  imageAspectRatio = '21/9'
 }: ExpandableInfoProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -58,11 +60,15 @@ export default function ExpandableInfo({
           >
             <div className="pt-4 pb-2 text-ink-light leading-relaxed text-sm sm:text-base border-t border-stone mt-4">
               {imageUrl && (
-                <div className="mb-6 w-full">
+                <div className="mb-6 w-full flex justify-center">
                   <img 
                     src={imageUrl} 
                     alt={title} 
-                    className="w-full aspect-[21/9] object-cover rounded-sm"
+                    className={`w-full object-cover rounded-sm ${
+                      imageAspectRatio === '1:1' ? 'max-w-md aspect-square' : 
+                      imageAspectRatio === 'auto' ? 'h-auto max-h-[600px] object-contain' : 
+                      'aspect-[21/9]'
+                    }`}
                     referrerPolicy="no-referrer"
                   />
                 </div>
