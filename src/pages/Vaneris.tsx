@@ -36,7 +36,8 @@ export default function Vaneris() {
         </h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <div className="bg-stone p-6">
+          <div className="bg-stone p-6 rounded-sm">
+            <img src="https://gbe88.uk/EB/BG_7.webp" alt="바네리스" className="w-full aspect-[21/9] object-cover rounded-sm mb-4" referrerPolicy="no-referrer" />
             <h3 className="font-serif text-lg text-ink font-semibold mb-2">벨라노바</h3>
             <span className="text-xs text-ink-light tracking-widest uppercase block mb-3">수도</span>
             <p className="text-sm text-ink-light">북부 최대 도시. 바네리스의 첨단 마도공학이 집약된 눈부신 마도도시입니다.</p>

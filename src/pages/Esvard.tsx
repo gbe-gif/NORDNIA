@@ -36,7 +36,8 @@ export default function Esvard() {
         </h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="bg-stone p-6">
+          <div className="bg-stone p-6 rounded-sm">
+            <img src="https://gbe88.uk/EB/BG_8.webp" alt="에스바르드" className="w-full aspect-[21/9] object-cover rounded-sm mb-4" referrerPolicy="no-referrer" />
             <h3 className="font-serif text-lg text-ink font-semibold mb-2">스칼드하임</h3>
             <span className="text-xs text-ink-light tracking-widest uppercase block mb-3">수도</span>
             <p className="text-sm text-ink-light">남부 최대의 요새 도시이자 공작령의 수도. 흔들리지 않는 국경 방어의 중심입니다.</p>

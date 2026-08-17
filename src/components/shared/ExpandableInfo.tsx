@@ -8,6 +8,7 @@ interface ExpandableInfoProps {
   summary: string;
   details: ReactNode;
   themeColor: string;
+  imageUrl?: string;
 }
 
 export default function ExpandableInfo({
@@ -15,7 +16,8 @@ export default function ExpandableInfo({
   subtitle,
   summary,
   details,
-  themeColor
+  themeColor,
+  imageUrl
 }: ExpandableInfoProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -55,6 +57,16 @@ export default function ExpandableInfo({
             className="overflow-hidden"
           >
             <div className="pt-4 pb-2 text-ink-light leading-relaxed text-sm sm:text-base border-t border-stone mt-4">
+              {imageUrl && (
+                <div className="mb-6 w-full">
+                  <img 
+                    src={imageUrl} 
+                    alt={title} 
+                    className="w-full aspect-[21/9] object-cover rounded-sm"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+              )}
               {details}
             </div>
           </motion.div>

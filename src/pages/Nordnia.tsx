@@ -93,6 +93,7 @@ export default function Nordnia() {
                 <li>도서관 후문이 연구지구와 연결됨.</li>
               </ul>
             }
+            imageUrl="https://gbe88.uk/EB/BG_3.webp"
             themeColor="text-nordnia-main"
           />
           <ExpandableInfo 
@@ -100,6 +101,7 @@ export default function Nordnia() {
             subtitle="학술 중심지"
             summary="각 분야 학술기관과 연구시설 밀집 구역."
             details="거대 서점과 만물상회가 즐비하며, 제국의 수많은 학자와 연구원들이 거주하고 교류하는 지식의 장입니다."
+            imageUrl="https://gbe88.uk/EB/BG_4.webp"
             themeColor="text-nordnia-main"
           />
           <ExpandableInfo 
@@ -107,18 +109,23 @@ export default function Nordnia() {
             subtitle="데이트 명소"
             summary="황도의 중앙 광장. 계절별 대형 축제 개최."
             details="중앙정원, 대형 분수, 시계탑이 위치해 있습니다. 황도 시민들과 귀족들의 대표적인 휴식처이자 데이트 명소입니다."
+            imageUrl="https://gbe88.uk/EB/BG_5.webp"
             themeColor="text-nordnia-main"
           />
           <ExpandableInfo 
-            title="쿤스트할 & 글란체"
-            subtitle="예술과 상업"
-            summary="미술관, 대극장, 사교클럽과 명품 상점가."
-            details={
-              <ul className="list-disc list-inside space-y-1">
-                <li><strong>쿤스트할:</strong> 귀족 사교의 중심. 미술관, 사교클럽, 티룸 발달.</li>
-                <li><strong>글란체:</strong> 쿤스트할을 지나면 나타나는 상점가. 고급 의류, 장신구, 유명 디저트 맛집 밀집.</li>
-              </ul>
-            }
+            title="쿤스트할"
+            subtitle="예술과 사교"
+            summary="미술관, 대극장, 사교클럽 발달."
+            details="귀족 사교의 중심. 미술관, 대극장, 사교클럽, 티룸이 발달해 있습니다."
+            imageUrl="https://gbe88.uk/EB/BG_11.webp"
+            themeColor="text-nordnia-main"
+          />
+          <ExpandableInfo 
+            title="글란체"
+            subtitle="상업과 유행"
+            summary="명품 상점가 및 디저트 맛집 밀집 구역."
+            details="쿤스트할을 지나면 나타나는 상점가입니다. 고급 의류, 장신구, 유명 디저트 맛집이 밀집해 있어 유행을 선도합니다."
+            imageUrl="https://gbe88.uk/EB/BG_12.webp"
             themeColor="text-nordnia-main"
           />
           <ExpandableInfo 
@@ -126,18 +133,23 @@ export default function Nordnia() {
             subtitle="종교 및 사교"
             summary="매달 30일 귀족 정기기도회 개최 (필참)."
             details="신성한 종교 시설인 동시에 귀족들의 주요 교류 장소입니다. 최근 연애운을 점치는 성물이 유명해져 젊은 귀족 여성들에게 큰 인기를 끌고 있습니다."
+            imageUrl="https://gbe88.uk/EB/BG_10.webp"
             themeColor="text-nordnia-main"
           />
           <ExpandableInfo 
-            title="빈민가 & 사냥터"
-            subtitle="외곽 및 위험 구역"
-            summary="정보상 밀집 구역과 광대한 마물 사냥 구역."
-            details={
-              <ul className="list-disc list-inside space-y-1">
-                <li><strong>빈민가:</strong> 황도 외곽. 정보상, 암시장 밀집. 치안이 불안정하나 유명한 불량식품 맛집이 다수 존재.</li>
-                <li><strong>사냥터:</strong> 서북부 위치. 깊은 곳일수록 위험한 마물 출몰. 주변에 대장간과 마도구 상점 발달.</li>
-              </ul>
-            }
+            title="빈민가"
+            subtitle="위험 구역"
+            summary="치안이 불안정하나 맛집이 다수 존재하는 황도 외곽."
+            details="황도 외곽에 위치하며 정보상과 암시장이 밀집해 있습니다. 치안이 불안정하지만 유명한 불량식품 맛집이 다수 존재합니다."
+            imageUrl="https://gbe88.uk/EB/BG_6.webp"
+            themeColor="text-nordnia-main"
+          />
+          <ExpandableInfo 
+            title="사냥터"
+            subtitle="마물 출몰 지역"
+            summary="황도 서북부 광대한 마물 사냥 구역."
+            details="서북부에 위치하며, 깊은 곳일수록 위험한 마물이 출몰합니다. 주변에 대장간과 마도구 상점이 발달해 있습니다."
+            imageUrl="https://gbe88.uk/EB/BG_9.webp"
             themeColor="text-nordnia-main"
           />
         </div>
@@ -151,7 +163,8 @@ export default function Nordnia() {
               제국 동부
               <div className="flex-1 h-[1px] bg-border-warm" />
             </h2>
-            <div className="bg-stone p-6">
+            <div className="bg-stone p-6 rounded-sm">
+              <img src="https://gbe88.uk/EB/BG_13.webp" alt="제국 동부" className="w-full aspect-[21/9] object-cover rounded-sm mb-4" referrerPolicy="no-referrer" />
               <h3 className="font-serif text-lg text-ink font-semibold mb-2">곡창과 과수원</h3>
               <p className="text-sm text-ink-light mb-4">제국 최대의 곡창지대. 넓은 과수원이 발달하여 풍요로운 농업 생산량을 자랑합니다.</p>
               <div className="border-t border-border-warm pt-4 mt-2">
@@ -166,7 +179,8 @@ export default function Nordnia() {
               제국 서부
               <div className="flex-1 h-[1px] bg-border-warm" />
             </h2>
-            <div className="bg-stone p-6">
+            <div className="bg-stone p-6 rounded-sm">
+              <img src="https://gbe88.uk/EB/BG_14.webp" alt="제국 서부" className="w-full aspect-[21/9] object-cover rounded-sm mb-4" referrerPolicy="no-referrer" />
               <h3 className="font-serif text-lg text-ink font-semibold mb-2">무역과 해안</h3>
               <p className="text-sm text-ink-light mb-4">대양과 접한 광대한 해안지대. 외부 문물 유입과 해양 교역의 중심입니다.</p>
               <div className="border-t border-border-warm pt-4 mt-2">
