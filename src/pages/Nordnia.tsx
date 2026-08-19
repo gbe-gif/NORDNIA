@@ -91,6 +91,14 @@ export default function Nordnia() {
           황도 메디온
           <div className="flex-1 h-[1px] bg-border-warm" />
         </h2>
+        <div className="mb-6 w-full">
+          <img 
+            src="https://gbe88.uk/2/EB/pa_7.webp" 
+            alt="황도 메디온 전경" 
+            className="w-full aspect-[21/9] object-cover rounded-sm"
+            referrerPolicy="no-referrer"
+          />
+        </div>
         <p className="text-ink-light mb-6">제국의 심장. 화려한 대리석과 첨단 시설이 조화를 이루는 거대 도시.</p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">

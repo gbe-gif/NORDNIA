@@ -52,7 +52,8 @@ export default function Esvard() {
             <span className="text-xs text-ink-light tracking-widest uppercase block mb-3">수도</span>
             <p className="text-sm text-ink-light">남부 최대의 요새 도시이자 공작령의 수도. 흔들리지 않는 국경 방어의 중심입니다.</p>
           </div>
-          <div className="bg-stone p-6">
+          <div className="bg-stone p-6 rounded-sm">
+            <img src="https://gbe88.uk/2/EB/pa_5.webp" alt="칸타렐" className="w-full aspect-[21/9] object-cover rounded-sm mb-4" referrerPolicy="no-referrer" />
             <h3 className="font-serif text-lg text-ink font-semibold mb-2">칸타렐</h3>
             <span className="text-xs text-ink-light tracking-widest uppercase block mb-3">대산림</span>
             <p className="text-sm text-ink-light">완만한 구릉이 끊임없이 이어지는 거대한 남부 산림 지대입니다.</p>
@@ -66,6 +67,14 @@ export default function Esvard() {
           에스바르드 공작가
           <div className="flex-1 h-[1px] bg-border-warm" />
         </h2>
+        <div className="mb-6 w-full">
+          <img 
+            src="https://gbe88.uk/2/EB/pa_4.webp" 
+            alt="에스바르드 공작가" 
+            className="w-full aspect-[21/9] object-cover rounded-sm"
+            referrerPolicy="no-referrer"
+          />
+        </div>
         <div className="bg-esvard-main/5 p-6 md:p-8 border border-esvard-main/10 text-ink-light mb-8">
           <p className="mb-2">
             <strong className="text-esvard-main">신성혈통:</strong> 불꽃·전쟁·폭풍의 신성
@@ -167,6 +176,7 @@ export default function Esvard() {
             subtitle="주력 산업"
             summary="최고급 말 사육 및 목축업, 경마 산업 발달."
             details="드넓은 평원과 목초지를 활용한 목축업이 크게 발달했습니다. 기병대용 군마뿐 아니라 경마 산업을 주도하고 있으며, 질 좋은 육류를 제국 전역에 공급합니다."
+            imageUrl="https://gbe88.uk/2/EB/pa_6.webp"
             themeColor="text-esvard-main"
           />
           <ExpandableInfo 

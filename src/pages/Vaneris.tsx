@@ -52,12 +52,14 @@ export default function Vaneris() {
             <span className="text-xs text-ink-light tracking-widest uppercase block mb-3">수도</span>
             <p className="text-sm text-ink-light">북부 최대 도시. 바네리스의 첨단 마도공학이 집약된 눈부신 마도도시입니다.</p>
           </div>
-          <div className="bg-stone p-6">
+          <div className="bg-stone p-6 rounded-sm">
+            <img src="https://gbe88.uk/2/EB/pa_1.webp" alt="즈나움" className="w-full aspect-[21/9] object-cover rounded-sm mb-4" referrerPolicy="no-referrer" />
             <h3 className="font-serif text-lg text-ink font-semibold mb-2">즈나움</h3>
             <span className="text-xs text-ink-light tracking-widest uppercase block mb-3">연구 도시</span>
             <p className="text-sm text-ink-light">바네리스 산하 마도학술원. 마도공학과 각종 학술 연구의 중심지입니다.</p>
           </div>
-          <div className="bg-stone p-6">
+          <div className="bg-stone p-6 rounded-sm">
+            <img src="https://gbe88.uk/2/EB/pa_2.webp" alt="벨고라" className="w-full aspect-[21/9] object-cover rounded-sm mb-4" referrerPolicy="no-referrer" />
             <h3 className="font-serif text-lg text-ink font-semibold mb-2">벨고라</h3>
             <span className="text-xs text-ink-light tracking-widest uppercase block mb-3">만년설 산맥</span>
             <p className="text-sm text-ink-light">거대한 설산과 빙하. 스키 및 스노보드 관광이 발달한 북부 최고의 휴양지입니다.</p>
@@ -71,6 +73,14 @@ export default function Vaneris() {
           바네리스 공작가
           <div className="flex-1 h-[1px] bg-border-warm" />
         </h2>
+        <div className="mb-6 w-full">
+          <img 
+            src="https://gbe88.uk/2/EB/pa_3.webp" 
+            alt="바네리스 공작가" 
+            className="w-full aspect-[21/9] object-cover rounded-sm"
+            referrerPolicy="no-referrer"
+          />
+        </div>
         <div className="bg-vaneris-main/5 p-6 md:p-8 border border-vaneris-main/10 text-ink-light mb-8">
           <p className="mb-2">
             <strong className="text-vaneris-main">신성혈통:</strong> 지혜·룬·별·마법의 신성
@@ -175,6 +185,7 @@ export default function Vaneris() {
             subtitle="핵심 자원"
             summary="바네리스 영지 전역에서 채굴되는 광물."
             details="북부 마도공학과 열원 마법진의 동력이 되는 핵심 자원. 바네리스의 막대한 부와 기술력의 원천입니다."
+            imageUrl="https://gbe88.uk/2/EB/pa_8.webp"
             themeColor="text-vaneris-main"
           />
           <ExpandableInfo 
