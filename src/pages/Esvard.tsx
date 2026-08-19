@@ -11,6 +11,16 @@ export default function Esvard() {
       exit={{ opacity: 0 }}
       className="flex-1 w-full max-w-4xl mx-auto px-6 py-12"
     >
+      {/* Banner Image */}
+      <div className="mb-12 w-full">
+        <img 
+          src="https://gbe88.uk/2/EB/p_a.webp" 
+          alt="에스바르드 공작령 전경" 
+          className="w-full aspect-[21/9] object-cover rounded-sm"
+          referrerPolicy="no-referrer"
+        />
+      </div>
+
       {/* Header */}
       <header className="mb-16 text-center md:text-left border-b border-border-warm pb-12">
         <span className="text-sm tracking-[0.3em] text-esvard-main/70 uppercase mb-4 block">Southern Duchy</span>
