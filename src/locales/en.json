@@ -1,0 +1,366 @@
+{
+  "nav": {
+    "home": "HOME",
+    "vaneris": "VANERIS",
+    "nordnia": "NORDNIA",
+    "esvard": "ESVARD",
+    "archive": "OFFICIAL ARCHIVE",
+    "footer": "© 2026 Official Archive. All Records Preserved.",
+    "lang": "Language"
+  },
+  "home": {
+    "title1": "The World Was Destroyed",
+    "title2": "By A Family Feud",
+    "subtitle": "\"Wait, this web novel world is now my reality?!\"",
+    "explore": "EXPLORE",
+    "regions": {
+      "vaneris": {
+        "name": "Duchy of Vaneris",
+        "desc": "The northern chill, sanctuary of mana stones and magitech."
+      },
+      "nordnia": {
+        "name": "Nordnia Empire",
+        "desc": "The center of the continent, the sacred imperial family."
+      },
+      "esvard": {
+        "name": "Duchy of Esvard",
+        "desc": "The southern flame, cradle of strong knights and military might."
+      }
+    }
+  },
+  "nordnia": {
+    "tag": "Central Empire",
+    "title": "Nordnia Empire",
+    "facts": {
+      "world": "Setting",
+      "worldDesc": "18th-century European magical world",
+      "location": "Location",
+      "locationDesc": "Center of the continent",
+      "feature": "Features",
+      "featureDesc": "Existence of magic, spirits, and aura"
+    },
+    "desc": "The hegemon of the continent and the center of the world. A massive empire where power and balance are maintained by the imperial family and the two duchies.",
+    "familyTitle": "The Imperial Family",
+    "familyLineage": "Contract with the Spirit Kings. High spirit sensitivity passed down through generations.",
+    "familyDesc": "A sacred bloodline inheriting the powers of the sun and light. Valuing harmony and vitality over martial might, they act as the mediator between the two duchies.",
+    "characters": [
+      {
+        "name": "Lauritz von Nordnia",
+        "fullName": "Lauritz von Nordnia",
+        "title": "Crown Prince",
+        "keyword": "Relaxed, Kind, Mediator",
+        "ability": "Supreme Light Elementalist",
+        "details": [
+          "Striking appearance with golden hair and silver eyes.",
+          "A powerful elementalist contracted with the Spirit King of Light.",
+          "Friendly and relaxed demeanor that makes people comfortable.",
+          "Skilled at making slick jokes to ease tension.",
+          "Managing imperial affairs in place of the retired Emperor.",
+          "Suffering from chronic fatigue despite his appearance.",
+          "A key figure watching the conflict between the duchies up close."
+        ],
+        "imageCaption": "* Lauritz's image is not output during RP"
+      }
+    ],
+    "locationsTitle": "Imperial Capital Medion",
+    "locationsDesc": "The heart of the empire. A megacity where splendid marble and cutting-edge facilities harmonize.",
+    "locations": [
+      {
+        "title": "Imperial Palace",
+        "subtitle": "Symbol of the Empire",
+        "summary": "Venue for the grand council and the Imperial Library.",
+        "details": [
+          "Weekly grand council every Monday. Heads of the two duchies must attend.",
+          "Preserves rare books in the Imperial Library.",
+          "The library's back door connects to the research district."
+        ]
+      },
+      {
+        "title": "Kardia Square",
+        "subtitle": "Meeting Place",
+        "summary": "The central square of the capital. Hosts seasonal grand festivals.",
+        "details": "Features a central garden, a large fountain, and a clock tower. A popular resting place and date spot."
+      },
+      {
+        "title": "Nocturne District",
+        "subtitle": "Back Alleys",
+        "summary": "Unstable security but home to many famous eateries.",
+        "details": "Located on the outskirts. Dense with information brokers and black markets. Famous for its junk food eateries."
+      },
+      {
+        "title": "Argen Forest",
+        "subtitle": "Hunting Ground",
+        "summary": "Vast monster hunting area in the northwest.",
+        "details": "A vast forest in the northwest. Frequently used as a combat training ground for knights and academy cadets."
+      },
+      {
+        "title": "Research District",
+        "subtitle": "Academic Center",
+        "summary": "A dense area of academic institutions and research facilities.",
+        "details": "Lined with massive bookstores and general stores, it is a place of knowledge where countless scholars and researchers of the Empire live and interact."
+      },
+      {
+        "title": "Kunsthal",
+        "subtitle": "Art and Socializing",
+        "summary": "Developed with art galleries, grand theaters, and social clubs.",
+        "details": "The center of aristocratic socializing. Art galleries, grand theaters, social clubs, and tearooms are highly developed."
+      },
+      {
+        "title": "Glanz",
+        "subtitle": "Commerce and Trends",
+        "summary": "A dense area of luxury shopping streets and famous dessert shops.",
+        "details": "The shopping street that appears past Kunsthal. It leads trends with a high concentration of high-end clothing, accessories, and famous dessert spots."
+      },
+      {
+        "title": "Cathedral",
+        "subtitle": "Religion and Socializing",
+        "summary": "Regular aristocratic prayer meetings held on the 30th of every month (mandatory).",
+        "details": "It is both a sacred religious facility and a major meeting place for nobles. Recently, a holy relic that tells fortunes in love has become famous and is very popular among young noblewomen."
+      }
+    ],
+    "capitalDesc": "The heart of the Empire. A massive city where splendid marble and cutting-edge facilities harmonize.",
+    "east": {
+      "title": "Eastern Empire",
+      "subtitle": "Granaries and Orchards",
+      "desc": "The largest granary of the Empire. Boasts abundant agricultural production with developed large orchards.",
+      "cityLabel": "Representative City: Brega",
+      "cityDesc": "The central city of the East. Famous for producing high-quality wine and distilled spirits."
+    },
+    "west": {
+      "title": "Western Empire",
+      "subtitle": "Trade and Coast",
+      "desc": "A vast coastal area facing the ocean. The center of external cultural influx and maritime trade.",
+      "cityLabel": "Representative City: Havric",
+      "cityDesc": "The largest trading port in the West. Generates immense wealth through the trade of monster byproducts and rare spices."
+    }
+  },
+  "vaneris": {
+    "tag": "Northern Duchy",
+    "title": "Duchy of Vaneris",
+    "facts": {
+      "climate": "Climate",
+      "climateDesc": "Cold & dry, frequent snow",
+      "location": "Location",
+      "locationDesc": "Northern snowfields and mountains",
+      "foundation": "Base",
+      "foundationDesc": "Mana stone mines, permafrost, glaciers"
+    },
+    "desc": "A sanctuary of magitech standing tall in the northern blizzards. Driving the empire's magical and academic advancements with abundant mana stone resources.",
+    "locationsTitle": "Major Locations",
+    "locations": [
+      {
+        "title": "Bellanova",
+        "subtitle": "Capital",
+        "desc": "The largest city in the north. A dazzling magical city showcasing cutting-edge magitech."
+      },
+      {
+        "title": "Znaum",
+        "subtitle": "Research City",
+        "desc": "The Vaneris Magic Academy. The center of magitech and various academic researches."
+      },
+      {
+        "title": "Belgora",
+        "subtitle": "Permafrost Mountains",
+        "desc": "Massive snowy mountains and glaciers. The north's premier resort for skiing and snowboarding."
+      }
+    ],
+    "familyTitle": "House of Vaneris",
+    "familyLineage": "Divine nature of Ice, Abyss, and Wisdom",
+    "familyDesc": "A prestigious magic family producing archmages for generations. Driving the empire's magitech advancement with high intellectual curiosity.",
+    "characters": [
+      {
+        "name": "Leonid Vaneris",
+        "fullName": "Leonid Hartwig Vaneris",
+        "title": "Duke of Vaneris",
+        "keyword": "Responsibility, Intellectual Pride",
+        "ability": "9th Circle Archmage",
+        "details": [
+          "Great pride in magic and knowledge, well-versed in various fields.",
+          "A reliable patriarch with a strong sense of responsibility.",
+          "Appears gruff but is endlessly generous to his family.",
+          "Prefers logical and systematic thinking.",
+          "A workaholic who ignores his surroundings when immersed in research.",
+          "Calls his rival, the Duke of Esvard, a 'barbaric bear'.",
+          "Secretly loves sweets (especially macarons)."
+        ]
+      },
+      {
+        "name": "Kazimir Vaneris",
+        "fullName": "Kazimir Bolesław Vaneris",
+        "title": "Young Duke / Next Head",
+        "keyword": "Intellectual Superiority, Politeness",
+        "ability": "7-Circle Mage",
+        "details": [
+          "A magic prodigy who received systematic education since childhood.",
+          "Values knowledge and etiquette, reacting strictly to behavior that falls below his standards.",
+          "Has a strong sense of intellectual superiority, calling others 'ignorant masses' without hesitation.",
+          "Maintains a polite gentlemanly demeanor towards ladies but is much stricter towards men.",
+          "Considers Esvard's young duke Hakon as his rival and believes himself superior in all aspects except swordsmanship.",
+          "His pride is hurt when the public evaluates him on a similar level to Hakon.",
+          "Loves sweets very much and exercises consistently to maintain his physique. Has a weakness of being afraid of ghosts.",
+          "<strong>Scent:</strong> A blend of neroli and subtle lily."
+        ]
+      },
+      {
+        "name": "Ingrid Vaneris",
+        "fullName": "Ingrid Albina Vaneris",
+        "title": "Lady",
+        "keyword": "Pride, Honesty",
+        "ability": "3-Circle Mage",
+        "details": [
+          "A proud and confident girl who believes she is the center of the world.",
+          "Weak to praise and clearly shows her mood or dissatisfaction on her face.",
+          "Particularly sensitive to being treated as a lady due to her brother's protection and strict education.",
+          "Extremely dislikes Esvard's second son Egil, treating him like a wild horse.",
+          "Obsessed with proving her superiority against Egil.",
+          "Enjoys reading romance novels and secretly admires the Crown Prince.",
+          "Extremely hates bugs with many legs and has a constitution that reacts poorly to cheap fabrics.",
+          "<strong>Scent:</strong> A refreshing blend of lemon and sweet plum."
+        ]
+      }
+    ],
+    "specialtiesTitle": "Specialties & Ecology",
+    "specialties": [
+      {
+        "title": "Mana Stones",
+        "subtitle": "Core Resource",
+        "summary": "Minerals mined throughout the Vaneris territory.",
+        "details": "The core resource powering northern magitech. The source of Vaneris's immense wealth and technological prowess."
+      },
+      {
+        "title": "Tumbleroot",
+        "subtitle": "Rare Alpine Monster",
+        "summary": "A plump and round specialty monster living in Belgora.",
+        "details": [
+          "Excellent for muscle synthesis and stamina recovery.",
+          "Outstanding flavor similar to chicken.",
+          "Grows root-legs and attempts to flee the moment it's plucked.",
+          "Has a cute habit of tripping and rolling as soon as it starts running."
+        ]
+      }
+    ]
+  },
+  "esvard": {
+    "tag": "Southern Duchy",
+    "title": "Duchy of Esvard",
+    "facts": {
+      "climate": "Climate",
+      "climateDesc": "Mild Mediterranean",
+      "location": "Location",
+      "locationDesc": "Southern plains and rugged mountains",
+      "foundation": "Base",
+      "foundationDesc": "Abundant sunlight, vast forests"
+    },
+    "desc": "The shield of the south, where warm sunlight and vast plains unfold. A proud region boasting strong knights and military might.",
+    "locationsTitle": "Major Locations",
+    "locations": [
+      {
+        "title": "Skaldheim",
+        "subtitle": "Capital",
+        "desc": "The largest fortress city in the south. The center of unshakeable border defense."
+      },
+      {
+        "title": "Cantarel",
+        "subtitle": "Great Forest",
+        "desc": "A massive southern forest area with endless gentle hills."
+      }
+    ],
+    "familyTitle": "House of Esvard",
+    "familyLineage": "Divine nature of Flame, War, and Storm",
+    "familyDesc": "Acting as the empire's shield by fending off external enemies with overwhelming martial prowess. Prioritizes military strength and swordsmanship.",
+    "characters": [
+      {
+        "name": "Astrid Esvard",
+        "fullName": "Astrid Sigrún Esvard",
+        "title": "Duke of Esvard",
+        "keyword": "Boldness, Values Honor",
+        "ability": "Grand Swordmaster",
+        "details": [
+          "Values the honor and traditions of her family above all else.",
+          "Usually maintains dignity, but erupts like a volcano when lines are crossed.",
+          "Bold and generous, but holds grudges against insults to family honor.",
+          "Casually proposes lethal stratagems using elegant aristocratic vocabulary.",
+          "Trusts hands-on experience and skill over pedantic theory.",
+          "Acknowledges Leonid's skill but dislikes him personally.",
+          "Has a surprising hobby of hunting giant monsters herself."
+        ]
+      },
+      {
+        "name": "Håkon Esvard",
+        "fullName": "Håkon August Esvard",
+        "title": "Young Duke / Next Head",
+        "keyword": "Perfectionism, Family Love",
+        "ability": "Sword Expert (Advanced)",
+        "details": [
+          "An outstanding heir well-versed in culture, etiquette, stamina, and swordsmanship.",
+          "Coolly accepts the results of a fair fight, even acknowledging his opponent.",
+          "Still shows traces of puberty and is sensitive when his boundaries are crossed.",
+          "In a fierce rivalry with Vaneris's young duke Kazimir.",
+          "Responds firmly and coldly the moment an opponent messes with his family.",
+          "Has calm hobbies of collecting magic items and visiting art galleries.",
+          "<strong>Scent:</strong> A calm cedarwood scent brushed with ginger."
+        ]
+      },
+      {
+        "name": "Egil Esvard",
+        "fullName": "Egil Vidar Esvard",
+        "title": "Second Son",
+        "keyword": "Competitiveness, Need for Recognition",
+        "ability": "Sword Expert Beginner",
+        "details": [
+          "Has a strong desire to prove his presence in the shadow of his outstanding brother.",
+          "The type to easily cause trouble the moment he is sure a plan will succeed.",
+          "Weak to praise and has an honest personality whose mood quickly improves when recognized.",
+          "Respects his brother but harbors subtle competitiveness. Currently in a rebellious puberty phase.",
+          "In a feud with Vaneris Lady Ingrid where they provoke each other's pride whenever they meet.",
+          "Has a peach allergy. Enjoys reading heroic tales of the continent.",
+          "<strong>Scent:</strong> A sweet green apple-like scent."
+        ]
+      }
+    ],
+    "specialtiesTitle": "Specialties & Ecology",
+    "specialties": [
+      {
+        "title": "Southern Stallions & Meat",
+        "subtitle": "Main Industry",
+        "summary": "Breeding of premium horses and livestock.",
+        "details": "Livestock farming using the vast plains is highly developed. Leads the horse racing industry and supplies quality meat empire-wide."
+      },
+      {
+        "title": "Meatcap",
+        "subtitle": "Rare Mushroom Monster",
+        "summary": "A mobile mushroom monster living only in Cantarel.",
+        "details": [
+          "Moves freely on thin mycorrhizal legs under its cap.",
+          "Adults are about the size of a chicken.",
+          "Deep and rich beef flavor.",
+          "Excellent for mana recovery and focus enhancement when consumed."
+        ]
+      }
+    ]
+  },
+  "common": {
+    "age": "yo",
+    "gender": "Gender",
+    "height": "Height",
+    "mbti": "MBTI",
+    "birthday": "Birthday",
+    "male": "Male",
+    "female": "Female",
+    "nextRegion": "Explore Next Region",
+    "nav_home": "HOME",
+    "nav_vaneris": "VANERIS",
+    "nav_nordnia": "NORDNIA",
+    "nav_esvard": "ESVARD",
+    "mapTitle": "Continental Power Map",
+    "vanerisSubtitle": "Northern Duchy",
+    "nordniaSubtitle": "Central Empire / Mediator",
+    "esvardSubtitle": "Southern Duchy",
+    "tension": "Tension",
+    "readMore": "Read more",
+    "collapse": "Collapse",
+    "feature": "Features",
+    "ability": "Abilities",
+    "divineLineage": "Divine Lineage"
+  }
+}

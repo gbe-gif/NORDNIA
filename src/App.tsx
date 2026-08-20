@@ -4,10 +4,15 @@ import Home from './pages/Home';
 import Nordnia from './pages/Nordnia';
 import Vaneris from './pages/Vaneris';
 import Esvard from './pages/Esvard';
+import ScrollToTop from './components/shared/ScrollToTop';
+import { useTranslation } from 'react-i18next';
 
 export default function App() {
+  const { t } = useTranslation();
+
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-1 flex flex-col pt-16">
@@ -20,7 +25,7 @@ export default function App() {
         </main>
         <footer className="w-full py-8 text-center border-t border-border-warm bg-stone/50 mt-auto">
           <p className="text-xs text-ink-light tracking-widest uppercase font-serif">
-            © {new Date().getFullYear()} Official Archive. All Records Preserved.
+            {t('nav.footer')}
           </p>
         </footer>
       </div>

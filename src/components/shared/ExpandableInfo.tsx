@@ -19,7 +19,7 @@ export default function ExpandableInfo({
   details,
   themeColor,
   imageUrl,
-  imageAspectRatio = '21/9'
+  imageAspectRatio = '21:9'
 }: ExpandableInfoProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -31,9 +31,9 @@ export default function ExpandableInfo({
       >
         <div className="flex-1 pr-4">
           <div className="flex items-center gap-3 mb-1 flex-wrap">
-            <h4 className={`text-lg font-serif font-semibold ${themeColor}`}>{title}</h4>
+            <h4 className={`text-lg font-serif font-semibold break-words whitespace-normal ${themeColor}`}>{title}</h4>
             {subtitle && (
-              <span className="text-[10px] tracking-wider uppercase bg-stone px-2 py-0.5 text-ink-light rounded-sm">
+              <span className="text-[10px] tracking-wider uppercase bg-stone px-2 py-0.5 text-ink-light rounded-sm break-words whitespace-normal max-w-full">
                 {subtitle}
               </span>
             )}

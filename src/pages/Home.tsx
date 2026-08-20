@@ -1,40 +1,43 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-
-const regions = [
-  {
-    id: 'vaneris',
-    name: '바네리스 공작령',
-    enName: 'VANERIS',
-    desc: '북부의 한풍, 마정석과 마도공학의 성지',
-    path: '/vaneris',
-    image: 'https://gbe88.uk/2/EB/p_v.webp',
-    textColor: 'text-vaneris-accent',
-    border: 'border-vaneris-accent/30',
-  },
-  {
-    id: 'nordnia',
-    name: '노르드니아 제국',
-    enName: 'NORDNIA',
-    desc: '대륙의 중심, 신성한 황실과 두 공작가의 중재자',
-    path: '/nordnia',
-    image: 'https://gbe88.uk/2/EB/p_n.webp',
-    textColor: 'text-nordnia-accent',
-    border: 'border-nordnia-accent/30',
-  },
-  {
-    id: 'esvard',
-    name: '에스바르드 공작령',
-    enName: 'ESVARD',
-    desc: '남부의 불꽃, 강인한 기사들과 군사력의 요람',
-    path: '/esvard',
-    image: 'https://gbe88.uk/2/EB/p_a.webp',
-    textColor: 'text-esvard-accent',
-    border: 'border-esvard-accent/30',
-  }
-];
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
+  const { t } = useTranslation();
+
+  const regions = [
+    {
+      id: 'vaneris',
+      name: t('home.regions.vaneris.name'),
+      enName: 'VANERIS',
+      desc: t('home.regions.vaneris.desc'),
+      path: '/vaneris',
+      image: 'https://gbe88.uk/2/EB/p_v.webp',
+      textColor: 'text-vaneris-accent',
+      border: 'border-vaneris-accent/30',
+    },
+    {
+      id: 'nordnia',
+      name: t('home.regions.nordnia.name'),
+      enName: 'NORDNIA',
+      desc: t('home.regions.nordnia.desc'),
+      path: '/nordnia',
+      image: 'https://gbe88.uk/2/EB/p_n.webp',
+      textColor: 'text-nordnia-accent',
+      border: 'border-nordnia-accent/30',
+    },
+    {
+      id: 'esvard',
+      name: t('home.regions.esvard.name'),
+      enName: 'ESVARD',
+      desc: t('home.regions.esvard.desc'),
+      path: '/esvard',
+      image: 'https://gbe88.uk/2/EB/p_a.webp',
+      textColor: 'text-esvard-accent',
+      border: 'border-esvard-accent/30',
+    }
+  ];
+
   return (
     <div className="flex-1 flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] w-full px-4 py-12 md:py-0">
       
@@ -46,10 +49,10 @@ export default function Home() {
         className="text-center mb-16 max-w-3xl mx-auto"
       >
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-ink leading-tight mb-6">
-          가문 싸움에 세계가<br className="hidden sm:block"/> 개같이 멸망했습니다
+          {t('home.title1')}<br className="hidden sm:block"/> {t('home.title2')}
         </h1>
         <p className="text-lg sm:text-xl text-ink-light font-medium tracking-wide">
-          "라는 웹소설 세계관이 이제 내 현생이라고?!"
+          {t('home.subtitle')}
         </p>
       </motion.div>
 
@@ -78,7 +81,7 @@ export default function Home() {
                 <div className="h-0 overflow-hidden group-hover:h-auto opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out">
                   <p className="text-sm opacity-90 mb-6">{region.desc}</p>
                   <span className="inline-flex items-center text-xs uppercase tracking-widest border-b border-current pb-1">
-                    탐험하기
+                    {t('home.explore')}
                   </span>
                 </div>
               </motion.div>

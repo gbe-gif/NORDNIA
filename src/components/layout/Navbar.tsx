@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { useTranslation } from 'react-i18next';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,11 +24,15 @@ export default function Navbar() {
   }, [location.pathname]);
 
   const navLinks = [
-    { name: 'HOME', path: '/' },
-    { name: 'VANERIS', path: '/vaneris' },
-    { name: 'NORDNIA', path: '/nordnia' },
-    { name: 'ESVARD', path: '/esvard' },
+    { key: 'nav.home', path: '/' },
+    { key: 'nav.vaneris', path: '/vaneris' },
+    { key: 'nav.nordnia', path: '/nordnia' },
+    { key: 'nav.esvard', path: '/esvard' },
   ];
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <nav 
@@ -36,7 +42,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
         <Link to="/" className="font-serif text-lg tracking-widest text-ink hover:text-gold-accent transition-colors">
-          OFFICIAL ARCHIVE
+          {t('nav.archive')}
         </Link>
 
         {/* Desktop Nav */}
@@ -51,19 +57,46 @@ export default function Navbar() {
                   : 'text-ink-light hover:text-ink'
               }`}
             >
-              {link.name}
+              {t(link.key)}
             </Link>
           ))}
+          
+          <div className="relative group flex items-center gap-2 text-ink-light hover:text-ink cursor-pointer ml-4 py-4">
+            <Globe size={18} />
+            <span className="text-sm font-medium uppercase">{i18n.language}</span>
+            <div className="absolute top-[calc(100%-1rem)] right-0 pt-4 w-24 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none group-hover:pointer-events-auto z-50">
+              <div className="bg-paper border border-border-warm rounded shadow-lg flex flex-col py-1 overflow-hidden">
+                <button onClick={() => changeLanguage('ko')} className={`px-4 py-2 text-sm text-left hover:bg-stone transition-colors ${i18n.language === 'ko' ? 'font-bold text-gold-accent' : 'text-ink'}`}>KOR</button>
+                <button onClick={() => changeLanguage('en')} className={`px-4 py-2 text-sm text-left hover:bg-stone transition-colors ${i18n.language === 'en' ? 'font-bold text-gold-accent' : 'text-ink'}`}>ENG</button>
+                <button onClick={() => changeLanguage('ja')} className={`px-4 py-2 text-sm text-left hover:bg-stone transition-colors ${i18n.language === 'ja' ? 'font-bold text-gold-accent' : 'text-ink'}`}>JPN</button>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button 
-          className="md:hidden p-2 -mr-2 text-ink"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-4">
+          <div className="relative group flex items-center py-2">
+            <button className="flex items-center gap-1 text-ink-light p-1">
+              <Globe size={18} />
+              <span className="text-xs font-medium uppercase">{i18n.language}</span>
+            </button>
+            <div className="absolute top-[calc(100%-0.5rem)] right-0 pt-2 w-24 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none group-hover:pointer-events-auto z-50">
+              <div className="bg-paper border border-border-warm rounded shadow-lg flex flex-col py-1 overflow-hidden">
+                <button onClick={() => changeLanguage('ko')} className={`px-4 py-2 text-sm text-left hover:bg-stone transition-colors ${i18n.language === 'ko' ? 'font-bold text-gold-accent' : 'text-ink'}`}>KOR</button>
+                <button onClick={() => changeLanguage('en')} className={`px-4 py-2 text-sm text-left hover:bg-stone transition-colors ${i18n.language === 'en' ? 'font-bold text-gold-accent' : 'text-ink'}`}>ENG</button>
+                <button onClick={() => changeLanguage('ja')} className={`px-4 py-2 text-sm text-left hover:bg-stone transition-colors ${i18n.language === 'ja' ? 'font-bold text-gold-accent' : 'text-ink'}`}>JPN</button>
+              </div>
+            </div>
+          </div>
+          <button 
+            className="p-2 -mr-2 text-ink"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Nav */}
@@ -86,7 +119,7 @@ export default function Navbar() {
                     : 'text-ink-light hover:text-ink'
                 }`}
               >
-                {link.name}
+                {t(link.key)}
               </Link>
             ))}
           </motion.div>
