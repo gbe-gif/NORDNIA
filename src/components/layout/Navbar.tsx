@@ -76,19 +76,6 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center gap-4">
-          <div className="relative group flex items-center py-2">
-            <button className="flex items-center gap-1 text-ink-light p-1">
-              <Globe size={18} />
-              <span className="text-xs font-medium uppercase">{i18n.language}</span>
-            </button>
-            <div className="absolute top-[calc(100%-0.5rem)] right-0 pt-2 w-24 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none group-hover:pointer-events-auto z-50">
-              <div className="bg-paper border border-border-warm rounded shadow-lg flex flex-col py-1 overflow-hidden">
-                <button onClick={() => changeLanguage('ko')} className={`px-4 py-2 text-sm text-left hover:bg-stone transition-colors ${i18n.language === 'ko' ? 'font-bold text-gold-accent' : 'text-ink'}`}>KOR</button>
-                <button onClick={() => changeLanguage('en')} className={`px-4 py-2 text-sm text-left hover:bg-stone transition-colors ${i18n.language === 'en' ? 'font-bold text-gold-accent' : 'text-ink'}`}>ENG</button>
-                <button onClick={() => changeLanguage('ja')} className={`px-4 py-2 text-sm text-left hover:bg-stone transition-colors ${i18n.language === 'ja' ? 'font-bold text-gold-accent' : 'text-ink'}`}>JPN</button>
-              </div>
-            </div>
-          </div>
           <button 
             className="p-2 -mr-2 text-ink"
             onClick={() => setIsOpen(!isOpen)}
@@ -113,7 +100,7 @@ export default function Navbar() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm tracking-widest py-2 transition-colors border-b border-stone last:border-none ${
+                className={`text-sm tracking-widest py-2 transition-colors border-b border-stone ${
                   location.pathname === link.path 
                     ? 'text-gold-accent font-semibold' 
                     : 'text-ink-light hover:text-ink'
@@ -122,6 +109,18 @@ export default function Navbar() {
                 {t(link.key)}
               </Link>
             ))}
+            
+            <div className="py-2 flex items-center gap-6">
+              <div className="flex items-center gap-1 text-ink-light">
+                <Globe size={16} />
+                <span className="text-xs font-medium tracking-widest uppercase">Language</span>
+              </div>
+              <div className="flex gap-4">
+                <button onClick={() => changeLanguage('ko')} className={`text-sm tracking-widest ${i18n.language === 'ko' ? 'font-bold text-gold-accent' : 'text-ink-light hover:text-ink'}`}>KOR</button>
+                <button onClick={() => changeLanguage('en')} className={`text-sm tracking-widest ${i18n.language === 'en' ? 'font-bold text-gold-accent' : 'text-ink-light hover:text-ink'}`}>ENG</button>
+                <button onClick={() => changeLanguage('ja')} className={`text-sm tracking-widest ${i18n.language === 'ja' ? 'font-bold text-gold-accent' : 'text-ink-light hover:text-ink'}`}>JPN</button>
+              </div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
