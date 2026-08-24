@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X, Home } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 
@@ -41,9 +41,19 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
-        <Link to="/" className="font-serif text-lg tracking-widest text-ink hover:text-gold-accent transition-colors">
-          {t('nav.archive')}
-        </Link>
+        <div className="flex items-center gap-6">
+          <Link to="/" className="text-ink hover:text-gold-accent transition-colors" aria-label="Home">
+            <Home size={22} />
+          </Link>
+          
+          <div className="flex items-center gap-3 text-xs md:text-sm tracking-widest font-medium">
+            <button onClick={() => changeLanguage('ko')} className={`transition-colors ${i18n.language === 'ko' ? 'font-bold text-gold-accent' : 'text-ink-light hover:text-ink'}`}>KOR</button>
+            <span className="text-border-warm text-[10px] md:text-xs">|</span>
+            <button onClick={() => changeLanguage('en')} className={`transition-colors ${i18n.language === 'en' ? 'font-bold text-gold-accent' : 'text-ink-light hover:text-ink'}`}>ENG</button>
+            <span className="text-border-warm text-[10px] md:text-xs">|</span>
+            <button onClick={() => changeLanguage('ja')} className={`transition-colors ${i18n.language === 'ja' ? 'font-bold text-gold-accent' : 'text-ink-light hover:text-ink'}`}>JPN</button>
+          </div>
+        </div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
@@ -60,18 +70,6 @@ export default function Navbar() {
               {t(link.key)}
             </Link>
           ))}
-          
-          <div className="relative group flex items-center gap-2 text-ink-light hover:text-ink cursor-pointer ml-4 py-4">
-            <Globe size={18} />
-            <span className="text-sm font-medium uppercase">{i18n.language}</span>
-            <div className="absolute top-[calc(100%-1rem)] right-0 pt-4 w-24 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none group-hover:pointer-events-auto z-50">
-              <div className="bg-paper border border-border-warm rounded shadow-lg flex flex-col py-1 overflow-hidden">
-                <button onClick={() => changeLanguage('ko')} className={`px-4 py-2 text-sm text-left hover:bg-stone transition-colors ${i18n.language === 'ko' ? 'font-bold text-gold-accent' : 'text-ink'}`}>KOR</button>
-                <button onClick={() => changeLanguage('en')} className={`px-4 py-2 text-sm text-left hover:bg-stone transition-colors ${i18n.language === 'en' ? 'font-bold text-gold-accent' : 'text-ink'}`}>ENG</button>
-                <button onClick={() => changeLanguage('ja')} className={`px-4 py-2 text-sm text-left hover:bg-stone transition-colors ${i18n.language === 'ja' ? 'font-bold text-gold-accent' : 'text-ink'}`}>JPN</button>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -109,18 +107,6 @@ export default function Navbar() {
                 {t(link.key)}
               </Link>
             ))}
-            
-            <div className="py-2 flex items-center gap-6">
-              <div className="flex items-center gap-1 text-ink-light">
-                <Globe size={16} />
-                <span className="text-xs font-medium tracking-widest uppercase">Language</span>
-              </div>
-              <div className="flex gap-4">
-                <button onClick={() => changeLanguage('ko')} className={`text-sm tracking-widest ${i18n.language === 'ko' ? 'font-bold text-gold-accent' : 'text-ink-light hover:text-ink'}`}>KOR</button>
-                <button onClick={() => changeLanguage('en')} className={`text-sm tracking-widest ${i18n.language === 'en' ? 'font-bold text-gold-accent' : 'text-ink-light hover:text-ink'}`}>ENG</button>
-                <button onClick={() => changeLanguage('ja')} className={`text-sm tracking-widest ${i18n.language === 'ja' ? 'font-bold text-gold-accent' : 'text-ink-light hover:text-ink'}`}>JPN</button>
-              </div>
-            </div>
           </motion.div>
         )}
       </AnimatePresence>
