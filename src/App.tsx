@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Home from './pages/Home';
@@ -8,7 +9,18 @@ import ScrollToTop from './components/shared/ScrollToTop';
 import { useTranslation } from 'react-i18next';
 
 export default function App() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+    if (i18n.language === 'ja') {
+      document.body.style.wordBreak = 'normal';
+      document.body.style.overflowWrap = 'break-word';
+    } else {
+      document.body.style.wordBreak = 'keep-all';
+      document.body.style.overflowWrap = 'break-word';
+    }
+  }, [i18n.language]);
 
   return (
     <Router>
